@@ -19,7 +19,7 @@ services:
     cap_add:
       - IPC_LOCK
   db:
-    image: mysql/mysql-server:5.7
+    image: mysql:oracle
     container_name: mysql-dev
     restart: always
     environment:
