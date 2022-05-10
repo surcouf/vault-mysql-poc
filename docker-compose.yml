@@ -24,3 +24,13 @@ services:
       MYSQL_ROOT_PASSWORD: 'ready2go'
     ports:
       - '3306:3306'
+
+  mongodb:
+    image: mongo
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: "mdbadmin"
+      MONGO_INITDB_ROOT_PASSWORD: "mdbpassword"
+    ports:
+      - '27017:27017'
+      - '28017:28017'
